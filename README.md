@@ -11,7 +11,8 @@ The package is tested against Julia 1.0.1 on Linux.
 ## Installation
 
 ```
-Pkg.add("Docker")
+using Pkg
+Pkg.add("https://github.com/hildebrandmw/Docker.jl")
 ```
 
 ## Getting started
