@@ -1,5 +1,9 @@
 # Docker.jl
 
+![Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
+[![Build Status](https://travis-ci.org/hildebrandmw/Docker.jl.svg?branch=master)](https://travis-ci.org/hildebrandmw/Docker.jl)
+[![codecov.io](http://codecov.io/github/hildebrandmw/Docker.jl/coverage.svg?branch=master)](http://codecov.io/github/hildebrandmw/Docker.jl?branch=master)
+
 A Julia interface for the Docker Remote API. It provides basic features to run containers and manage them.
 
 The package is tested against Julia 1.0.1 on Linux.
