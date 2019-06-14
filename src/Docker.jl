@@ -120,6 +120,8 @@ function create_container(
         ports        = [],
         pwd          = "",
         env          = [],
+        privileged   = false,
+        capadd       = [],
     )
 
     params = Dict(
@@ -142,8 +144,13 @@ function create_container(
                 ]
             ),
             "Binds" => binds,
+            "CapAdd" => capadd,
         )
     )
+
+    if privileged
+        params["HostConfig"]["SecurityOpt"] = ["seccomp=unconfined"]
+    end
 
     if !isempty(user)
         params["User"] = user
